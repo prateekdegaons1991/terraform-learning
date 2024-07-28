@@ -79,7 +79,7 @@ jobs:
       run: |
         ls -la
         pwd
-        cd ec2-instance
+        cd /Users/pratikdegaon/actions-runner/_work/terraform-learning/terraform-learning/ec2-instance
         terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
