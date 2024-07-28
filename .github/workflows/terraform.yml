@@ -76,6 +76,7 @@ jobs:
         ls -la
         pwd
         cd ec2-instance/
+        pwd
         terraform version
         terraform init
 
@@ -86,6 +87,8 @@ jobs:
     # Generates an execution plan for Terraform
     - name: Terraform Plan
       run: |
+        pwd
+        cd ec2-instance/
         terraform show -no-color infra.plan > tfplan.txt
         cat tfplan.txt
 
