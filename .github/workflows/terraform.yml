@@ -77,7 +77,8 @@ jobs:
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: |
-        cd ec2-instance
+        ls -la
+        cd /home/runner/work/terraform-learning/terraform-learning/ec2-instance
         terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
