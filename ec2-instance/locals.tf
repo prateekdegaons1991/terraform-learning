@@ -1,6 +1,7 @@
 locals {
   crrationDate = formatdate("YYYY-MM-DD hh:mm ZZZ", timestamp())
 
+
 }
 
 
