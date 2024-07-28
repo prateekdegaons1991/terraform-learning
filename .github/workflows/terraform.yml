@@ -78,7 +78,8 @@ jobs:
     - name: Terraform Init
       run: |
         ls -la
-        cd /ec2-instance
+        pwd
+        cd ec2-instance
         terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
