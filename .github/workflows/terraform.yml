@@ -67,6 +67,8 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
@@ -79,7 +81,8 @@ jobs:
       run: |
         ls -la
         pwd
-        cd /Users/pratikdegaon/actions-runner/_work/terraform-learning/terraform-learning/ec2-instance
+        cd ec2-instance/
+        ls -la
         terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
