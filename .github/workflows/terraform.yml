@@ -78,7 +78,7 @@ jobs:
     - name: Terraform Init
       run: |
         ls -la
-        cd /home/runner/work/terraform-learning/terraform-learning/ec2-instance
+        cd /ec2-instance
         terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
