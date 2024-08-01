@@ -17,4 +17,8 @@ resource "aws_instance" "terraform-datasource-ec2" {
   // The security groups associated with the EC2 instance.
   security_groups = var.security_groups
 
+  lifecycle {
+    create_before_destroy = true
+  }
+
 }
