@@ -8,5 +8,9 @@ resource "aws_iam_user" "dev_users" {
     CreationDate = local.crrationDate
   }
 
+  lifecycle {
+    prevent_destroy = true
+  }
+
 }
 

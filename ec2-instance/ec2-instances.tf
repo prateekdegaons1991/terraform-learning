@@ -18,7 +18,9 @@ resource "aws_instance" "terraform-datasource-ec2" {
   security_groups = var.security_groups
 
   lifecycle {
-    create_before_destroy = true
+    # create_before_destroy = true
+    ignore_changes = [tags]
+    prevent_destroy = true
   }
 
 }

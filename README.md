@@ -39,3 +39,10 @@ This repository contains code and resources for learning and practicing Terrafor
     │       └── main.tf
     └── .gitignore
 
+## explain what are terraform taints
+
+    tf apply -replace ="resource_name"
+
+the above command will replace the resource_name in the terraform code with desired state
+
+
