@@ -1,4 +1,4 @@
-provider "mycloud" {
+provider "aws" {
   
   profile = "mac"
 }
