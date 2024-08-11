@@ -10,6 +10,8 @@ resource "aws_instance" "myec2" {
     Name = "Pratik-Module"
   }
 
+
+
   provisioner "local-exec" {
     command = "echo ${aws_instance.myec2.public_ip} > public_ip.txt"
     
