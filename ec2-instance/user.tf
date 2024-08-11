@@ -9,7 +9,8 @@ resource "aws_iam_user" "dev_users" {
   }
 
   lifecycle {
-    prevent_destroy = true
+    prevent_destroy = false
+    ignore_changes = all
   }
 
 }

@@ -20,7 +20,7 @@ resource "aws_instance" "terraform-datasource-ec2" {
   lifecycle {
     # create_before_destroy = true
     ignore_changes = [tags]
-    prevent_destroy = true
+    prevent_destroy = false
   }
 
 }
