@@ -1,6 +1,6 @@
-provider "aws" {
-    region  = "eu-central-1"
-    profile = "mac"
+provider "my_cloud" {
+  
+  profile = "mac"
 }
 
 resource "aws_instance" "myec2" {
