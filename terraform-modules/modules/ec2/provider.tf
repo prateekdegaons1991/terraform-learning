@@ -1,6 +1,6 @@
 terraform {
   required_providers {
-    my_cloud = {
+    mycloud = {
         source = "hashicorp/aws"
         version = "~> 1.0"
     }

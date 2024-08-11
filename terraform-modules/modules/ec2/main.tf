@@ -1,4 +1,4 @@
-provider "my_cloud" {
+provider "mycloud" {
   
   profile = "mac"
 }
